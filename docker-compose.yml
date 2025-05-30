@@ -19,7 +19,7 @@ services:
       - SMTP_TIMEOUT=${SMTP_TIMEOUT}
       - SMTP_USERNAME=${SMTP_USERNAME}
       - SMTP_PASSWORD=${SMTP_PASSWORD}
-      - DOMAIN=https://${DOMAIN}
+      - DOMAIN=${DOMAIN}
     networks:
       - dokploy-network
     labels:
