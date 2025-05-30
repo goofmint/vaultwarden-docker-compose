@@ -5,7 +5,7 @@ services:
     container_name: vaultwarden
     restart: unless-stopped
     ports:
-      - "9445:80"
+      - "9445:9445"
     volumes:
       - ./bitwarden:/data:rw
     environment:
