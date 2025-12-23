@@ -5,7 +5,7 @@ services:
     container_name: vaultwarden
     restart: unless-stopped
     expose:
-      - 80
+      - 80:8000
     volumes:
       - ./bitwarden:/data:rw
     environment:
