@@ -7,7 +7,7 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./bitwarden:/data:rw
+      - /mnt/bitwarden:/data:rw
     environment:
       - ADMIN_TOKEN=${ADMIN_TOKEN}
       - WEBSOCKET_ENABLED=true
